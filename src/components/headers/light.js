@@ -18,7 +18,7 @@ const Header = tw.header`
 export const NavLinks = tw.div`inline-block`;
 
 /* hocus: stands for "on hover or focus"
- * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
+ * hocus:bg-green-700 will apply the bg-green-700 class on hover or focus
  */
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
@@ -28,8 +28,8 @@ export const NavLink = tw.a`
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
-  px-8 py-3 rounded bg-primary-500 text-gray-100
-  hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
+  px-8 py-3 rounded bg-green-500 text-gray-100
+  hocus:bg-green-700 hocus:text-gray-200 focus:shadow-outline
   border-b-0
 `;
 

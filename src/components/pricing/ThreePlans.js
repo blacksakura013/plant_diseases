@@ -29,7 +29,7 @@ background: rgb(85,60,154);
 background: linear-gradient(135deg, rgba(85,60,154,1) 0%, rgba(128,90,213,1) 100%);
 background: rgb(76,81,191);
 background: linear-gradient(135deg, rgba(76,81,191,1) 0%, rgba(102,126,234,1) 100%);
-      ${tw`bg-primary-500 text-gray-100`}
+      ${tw`bg-green-500 text-gray-100`}
       .planHighlight {
         ${tw`hidden`}
       }

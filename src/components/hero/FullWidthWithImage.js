@@ -34,7 +34,7 @@ const Actions = styled.div`
     ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:shadow-outline transition duration-300`}
   }
   .primaryAction {
-    ${tw`bg-primary-500 text-gray-100 hover:bg-primary-700`}
+    ${tw`bg-green-500 text-gray-100 hover:bg-green-700`}
   }
   .secondaryAction {
     ${tw`mt-4 sm:mt-0 sm:ml-4 bg-gray-300 text-gray-700 hover:bg-gray-400 hover:text-gray-800`}

@@ -1,20 +1,28 @@
-import React from "react";
-import tw from "twin.macro";
+
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import HeaderBase, {
   LogoLink as LogoLinkBase,
   NavLinks,
   NavLink as NavLinkBase,
   PrimaryLink as PrimaryLinkBase
-} from "../headers/light.js";
+} from "components/headers/light.js";
 import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import logoImageSrc from "images/logo-light.svg";
-import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import logoImageSrc from "./images/logo-app.png";
+import serverIllustrationImageSrc from "./images/main-promote.png";
 
-const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-green-900 text-gray-100`;
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Rnd } from "react-rnd";
+import { motion } from "framer-motion";
+import { components } from "ComponentRenderer.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import tw from "twin.macro";
+
+const PrimaryBackgroundContainer = tw.div`bg-green-900 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;
 const NavLink = tw(NavLinkBase)`lg:text-gray-100 lg:hocus:text-gray-300 lg:hocus:border-gray-100`;
 const LogoLink = tw(LogoLinkBase)`text-gray-100 hocus:text-gray-300`;
@@ -31,30 +39,34 @@ const PrimaryButton = tw(PrimaryButtonBase)`mt-8 text-sm sm:text-base px-6 py-5 
 const Image = tw.img`w-144 ml-auto`
 
 export default ({
-  heading = "High Performant Servers tailored to your needs",
-  description = "Our cloud provisions the best servers, with fast SSD, powerful Xeon Processors, whenever you need it. Oh, and we have 99.9% SLA",
-  primaryButtonText = "Start Your 15 Day Free Trial",
-  primaryButtonUrl = "#",
+  heading = "DETECT PLANT DISEASES IN PLANTS",
+  description = "คุนกำลังกำลังประสบปัญหาเกี่ยวกับการดูแลต้นไม้อยู่หรือไม่ ถ้าหากคุณกำลังมีปัญหาเช่นนี้อยู่ เรามีทางออกให้ เพียงคุณอัพโหลดรูปภาพต้นไม้ของคุณ เราก็พร้อมที่จะวินิจฉัยโรคพร้อมกับวิธีการดูแลต้นไม้ของคุณรวมถึงอาการลักษณะโดยรวมลองใช้เลยตอนนี้",
+  primaryButtonText = "ทดลองใช้ฟรี",
+  primaryButtonUrl = "/components/innerPages/Use",
   imageSrc = serverIllustrationImageSrc,
 }) => {
+
   const logoLink = (
     <LogoLink href="/">
       <img src={logoImageSrc} alt="Logo" />
-      Treact
+      dIP
     </LogoLink>
-  );
+  )
+
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">Features</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login</NavLink>
-      <PrimaryLink href="#">Signup</PrimaryLink>
+      <NavLink href="/components/innerPages/Use">การใช้งาน</NavLink>
+      <NavLink href="/components/innerPages/Info">เกี่ยวกับระบบ</NavLink>
+      <NavLink href="/components/innerPages/Login">เข้าสู่ระบบ</NavLink>
+      <PrimaryLink href="/components/innerPages/Signup">สมัครสมาชิก</PrimaryLink>
     </NavLinks>
   ];
   return (
     <PrimaryBackgroundContainer>
-      <Content2Xl>
-        <Header logoLink={logoLink} links={navLinks} />
+      <Content2Xl style={{marginTop:20}}>
+     
+        <Header  logoLink={logoLink} links={navLinks} />
+      
         <Container>
           <ContentWithVerticalPadding>
             <Row>

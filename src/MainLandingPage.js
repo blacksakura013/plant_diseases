@@ -28,7 +28,7 @@ const NavRow = tw(Row)`flex flex-col lg:flex-row items-center justify-between`;
 const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 border-b-2 mr-12 text-gray-700 border-gray-400 hocus:border-gray-700`;
 const PrimaryNavLink = tw(
   NavLink
-)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+)`text-gray-100 bg-green-500 px-6 py-3 border-none rounded hocus:bg-green-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 lg:pt-12 pb-16 max-w-screen-2xl mx-auto flex-wrap`;
 
 const Column = tw.div`flex-1`;
@@ -44,7 +44,7 @@ const Description = tw(
 const Actions = tw.div`flex flex-col sm:flex-row justify-center lg:justify-start`;
 const ActionButton = tw(
   AnchorLink
-)`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
+)`px-8 py-3 font-bold rounded bg-green-500 text-gray-100 hocus:bg-green-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
 const PrimaryButton = tw(ActionButton)``;
 const SecondaryButton = tw(
   ActionButton

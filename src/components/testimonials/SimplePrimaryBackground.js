@@ -11,7 +11,7 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
 
 import "slick-carousel/slick/slick.css";
 
-const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-green-900 text-gray-100`;
 
 const HeadingContainer = tw.div``;
 const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;

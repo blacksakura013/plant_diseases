@@ -19,6 +19,10 @@ import ServiceLandingPageImageSrc from "images/demo/ServiceLandingPage.jpeg";
 import HostingCloudLandingPageImageSrc from "images/demo/HostingCloudLandingPage.jpeg";
 
 
+import Login from "screen/Login.js";
+import Signup from "screen/Signup.js";
+import Use from "screen/Use.js";
+import Info from "screen/Info.js";
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
 import PricingPage from "pages/Pricing.js";
@@ -140,6 +144,30 @@ export const components = {
   },
 
   innerPages: {
+    Info: {
+      component: Info,
+      imageSrc: LoginPageImageSrc,
+      scrollAnimationDisabled: true,
+      url: `/components/innerPages/Info`,
+    },
+    Use: {
+      component: Use,
+      imageSrc: LoginPageImageSrc,
+      scrollAnimationDisabled: true,
+      url: `/components/innerPages/Use`,
+    },
+    Login: {
+      component: Login,
+      imageSrc: LoginPageImageSrc,
+      scrollAnimationDisabled: true,
+      url: `/components/innerPages/Login`,
+    },
+    Signup: {
+      component: Signup,
+      imageSrc: SignupPageImageSrc,
+      scrollAnimationDisabled: true,
+      url: `/components/innerPages/Signup`,
+    },
     LoginPage: {
       component: LoginPage,
       imageSrc: LoginPageImageSrc,
@@ -253,7 +281,7 @@ export const components = {
           component: ThreeColWithSideImageFeatures,
           url: "/components/blocks/Features/ThreeColWithSideImage",
         },
-         TwoColWithButton: {
+        TwoColWithButton: {
           name: "Two Column With Image and Action Button",
           component: TwoColWithButtonFeatures,
           url: "/components/blocks/Features/TwoColWithButton",
@@ -370,7 +398,7 @@ export const components = {
           component: ThreeColSimpleWithImageAndDashedBorderBlog,
           url: "/components/blocks/Blog/ThreeColSimpleWithImageAndDashedBorder",
         },
-      } 
+      }
     },
 
     Testimonial: {
@@ -510,17 +538,17 @@ export default () => {
 
   try {
     let Component = null;
-    if(type === "blocks" && subtype) {
-      Component= components[type][subtype]["elements"][name].component
+    if (type === "blocks" && subtype) {
+      Component = components[type][subtype]["elements"][name].component
       return <AnimationRevealPage disabled>
-          <Component/>
-        </AnimationRevealPage>
+        <Component />
+      </AnimationRevealPage>
     }
     else
-      Component= components[type][name].component
+      Component = components[type][name].component
 
-    if(Component)
-      return <Component/>
+    if (Component)
+      return <Component />
 
     throw new Error("Component Not Found")
   }

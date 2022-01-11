@@ -44,7 +44,7 @@ const FeatureIconContainer = styled.div`
   ${tw`mx-auto inline-block border border-primary-500 text-primary-500 text-center rounded p-2 flex-shrink-0`}
   ${props => [
     props.iconRoundedFull && tw`rounded-full`,
-    props.iconFilled && tw`border-0 bg-primary-500 text-gray-100`
+    props.iconFilled && tw`border-0 bg-green-500 text-gray-100`
   ]}
   svg {
     ${tw`w-5 h-5`}
