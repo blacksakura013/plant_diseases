@@ -23,6 +23,7 @@ import Login from "screen/Login.js";
 import Signup from "screen/Signup.js";
 import Use from "screen/Use.js";
 import Info from "screen/Info.js";
+import PInfo from "screen/PInfo.js";
 import LoginPage from "pages/Login.js";
 import SignupPage from "pages/Signup.js";
 import PricingPage from "pages/Pricing.js";
@@ -149,6 +150,12 @@ export const components = {
       imageSrc: LoginPageImageSrc,
       scrollAnimationDisabled: true,
       url: `/components/innerPages/Info`,
+    },
+    PInfo: {
+      component: PInfo,
+      imageSrc: LoginPageImageSrc,
+      scrollAnimationDisabled: true,
+      url: `/components/innerPages/PInfo`,
     },
     Use: {
       component: Use,

@@ -16,8 +16,8 @@ import Footer from "components/footers/FiveColumnWithInputForm.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import logoImageSrc from "./images/logo-app.png";
-import serverIllustrationImageSrcI from "./images/dIPI.png";
-import serverIllustrationImageSrcII from "./images/dIPII.png";
+import serverIllustrationImageSrcI from "./images/dIPEI.jpg";
+import serverIllustrationImageSrcII from "./images/dIPEII.jpg";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Rnd } from "react-rnd";
@@ -73,21 +73,29 @@ export default ({
 
         <Header logoLink={logoLink} links={navLinks} />
 
+
         <MainFeature1
           subheading={<Subheading> </Subheading>}
-          heading="การวิจัยโรคในพืช"
-          description="ข้อมูลเพิ่มเติมเกี่ยวกับการวิจัยโรคในพืช ได้เก็บรวบรวมข้อมูลการดูแลรักษารวมถึงอาการและสาเหตุที่ทำให้เกิดโรคพืชชนิดนั้นๆเพื่อป้องกันแม่ให้เกิดโรคพืชขึ้นมาได้"
+          heading="เพลี้ยหอย (Scale Insect :: ความแม่นยำ 83.39%)"
+          description="เป็นแมลงศัตรูประเภทปากดูด ลักษณะเป็นฝากลมนูนติดอยู่ตามผิวต้น และคอยดูดกินน้ำเลี้ยงจากต้น หากลุกลามมากอาจทำให้ต้นตายได้  มีหลายชนิดที่ระบาดในไม้ประดับ แต่ที่พบมาก คือเพลี้ยหอยเหลือง ที่เข้าทำลายแคคตัสหลายสกุล เช่น สกุลยิมโนคาไลเซียม (Gymnocalycium) เมโลแคคตัส (Melocactus) ใบเสมา (Opuntia)  ซีรีอุส (Cereus) แก้วมังกรหรือตอสามเหลี่ยม (Hylocercus undatus)"
           buttonRounded={false}
           primaryButtonText="อ่านเพิ่มเติม"
           imageSrc={imageSrcI}
+          textOnLeft={false}
         />
         <MainFeature1
           subheading={<Subheading> </Subheading>}
-          heading="การดูแลรักษาพืช"
-          description="การดูแลรักษาพืชเพื่อให้พืชเจริญเติบโตหรือออกดอกออกผลให้ได้ประสิทธิภาพสูงสุดอันควรจะเป็น วิธีการป้องกันแมลงเชื้อราหรือสิ่งเร้าต่างๆเช่นสภาพอากาศเป็นต้นการใช้เทคโนโลยีเข้ามาประยุกต์ใช้ในงานทางด้านเกษตรเพื่อทุ่นแรงชาวเกษตรกรและก็เป็น Smart Farmer เกษตรกร 4.0"
+          heading=""
+          description="วิธีแก้ไข
+
+          – ใช้แปรงสีฟันเก่า ขัดตัวเพลี้ยออก แล้วฉีดพ่นสารป้องกันกำจัดแมลงประเภทดูดซึม เช่น มาลาไธออน (Malathion) หรือนิโคตินซัลเฟต (Nicotine Sulphate) ตามอัตราที่ระบุ หลังจากนั้นอีก 1-2 สัปดาห์ ฉีดพ่นซ้ำเพื่อทำลายตัวอ่อนที่เพิ่งฟักจากไข่อีกครั้ง
+          – ถ้าระบาดเล็กน้อยหลังจากเขี่ยตัวเพลี้ยออก โรยสารป้องกันกำจัดแมลงที่นิยมใช้กันมากคือ สตาร์เกิลจี (Starkle G : ชื่อการค้า) หรืออิมิดาคลอพริด (imidacloprid): ชื่อสามัญ)
+          – ถ้าต้นทรุดโทรมมาก อาจเปลี่ยนดินปลูกใหม่พร้อมฉีดพ่นสารป้องกันกำจัดแมลง เพื่อป้องกันการลุกลาม
+          เพลี้ยหอยเหลืองที่เป็นแมลงศัตรูตัวร้ายของแคคตัสสกุลใบเสมา"
+          
           buttonRounded={false}
           primaryButtonText="อ่านเพิ่มเติม"
-      imageSrc={imageSrcII}
+          imageSrc={imageSrcII}
           textOnLeft={false}
         />
       </Content2Xl>

@@ -71,8 +71,8 @@ export default ({
           <ContentWithVerticalPadding >
 
             <TextColumn>
-              <form method="POST">
-                <input type="file" multiple />
+              <form   action="/components/innerPages/PInfo">
+                <input type="file" name="myImage" multiple />
                 <p>Drag your files here or click in this area.</p>
                 <button type="submit">Upload</button>
               </form>
